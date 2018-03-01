@@ -1,228 +1,152 @@
+
+
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  
+    <head>
+        <title>Dingo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="方丈是一名优秀的少先队员，英雄联盟召唤师，完全贯彻社会主义核心价值观的屌丝程序猿。" />
+        <meta name="keywords" content="Dingo的博客,戴强的博客,戴强的Blog,方丈的博客" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" href="data:image/png;base64,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" type="image/x-icon">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700' rel='stylesheet' type='text/css'>
+        <style>
+            html, body {
+                overflow: hidden;
+                margin: 0;
+            }
+            body {
+                font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+                color: #333;
+            }
+            #wrapper {
+                position: absolute;
+                left: 0;
+                width: 320px;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                margin-left: -160px;
+                margin-top: -160px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+            h1 {
+                font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                letter-spacing: 9px;
+                text-transform: uppercase;
+                margin: 12px 0;
+                left: 4px;
+            }
+            h2 {
+                color: #999;
+                font-weight: normal;
+                font-size: 15px;
+                letter-spacing: .12em;
+                margin-bottom: 30px;
+                left: 3px;
+            }
+            h1, h2 {
+                position: relative;
+            }
+            p {
+                font-size: 14px;
+                line-height: 2em;
+                margin: 0;
+                letter-spacing: 2px;
+            }
+            canvas {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+            }
+            a {
+                color: #999;
+                text-decoration: none;
+                transition: color .2s ease;
+            }
+            a:hover {
+                color: #f33;
+            }
+        </style>
+        <script type="text/javascript">
 
-  
-  <title>mxblog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Stay hungry,stay foolish.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="mxblog">
-<meta property="og:url" content="http://unclemx.cc/index.html">
-<meta property="og:site_name" content="mxblog">
-<meta property="og:description" content="Stay hungry,stay foolish.">
-<meta property="og:locale" content="ch-ZN">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mxblog">
-<meta name="twitter:description" content="Stay hungry,stay foolish.">
-  
-    <link rel="alternate" href="/atom.xml" title="mxblog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-</head>
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-38965494-1']);
+          _gaq.push(['_setDomainName', 'evanyou.me']);
+          _gaq.push(['_trackPageview']);
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">mxblog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://unclemx.cc"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-test文章" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/01/test文章/" class="article-date">
-  <time datetime="2018-02-28T16:30:28.000Z" itemprop="datePublished">2018-03-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/01/test文章/">test文章</a>
-    </h1>
-  
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>人生不就是拼搏吗？</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://unclemx.cc/2018/03/01/test文章/" data-id="cje7b17pr0001a74z3336wd1q" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/01/hello-world/" class="article-date">
-  <time datetime="2018-02-28T16:03:45.973Z" itemprop="datePublished">2018-03-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://unclemx.cc/2018/03/01/hello-world/" data-id="cje7b17pn0000a74zdtt854kr" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/03/01/test文章/">test文章</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/01/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 mx<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div>
-</body>
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Dingo</h1>
+            <h2>单枪匹马 &amp; 自娱自乐&nbsp;</h2>
+            <p><a href="http://blog.daiqiang.me" target="_blank">Blog</a></p>
+            <p><a href="https://github.com/daiqiang838" target="_blank">Github</a></p>
+            <p><a href="http://weibo.com/u/5068348729" target="_blank">微博</a></p>
+            <p><a href="https://www.zhihu.com/people/dai-qiang-60-47" target="_blank">知乎</a></p>
+        </div>
+        <canvas></canvas>
+        <script>
+            document.addEventListener('touchmove', function (e) {
+                e.preventDefault()
+            })
+            var c = document.getElementsByTagName('canvas')[0],
+                x = c.getContext('2d'),
+                pr = window.devicePixelRatio || 1,
+                w = window.innerWidth,
+                h = window.innerHeight,
+                f = 90,
+                q,
+                m = Math,
+                r = 0,
+                u = m.PI*2,
+                v = m.cos,
+                z = m.random
+            c.width = w*pr
+            c.height = h*pr
+            x.scale(pr, pr)
+            x.globalAlpha = 0.6
+            function i(){
+                x.clearRect(0,0,w,h)
+                q=[{x:0,y:h*.7+f},{x:0,y:h*.7-f}]
+                while(q[1].x<w+f) d(q[0], q[1])
+            }
+            function d(i,j){   
+                x.beginPath()
+                x.moveTo(i.x, i.y)
+                x.lineTo(j.x, j.y)
+                var k = j.x + (z()*2-0.25)*f,
+                    n = y(j.y)
+                x.lineTo(k, n)
+                x.closePath()
+                r-=u/-50
+                x.fillStyle = '#'+(v(r)*127+128<<16 | v(r+u/3)*127+128<<8 | v(r+u/3*2)*127+128).toString(16)
+                x.fill()
+                q[0] = q[1]
+                q[1] = {x:k,y:n}
+            }
+            function y(p){
+                var t = p + (z()*2-1.1)*f
+                return (t>h||t<0) ? y(p) : t
+            }
+            document.onclick = i
+            document.ontouchstart = i
+            i()
+        </script>
+    </body>
 </html>
